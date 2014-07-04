@@ -1,3 +1,9 @@
+mixi-inc/iOSTrainingを
+Swiftに書き換えていくプロジェクト (https://github.com/narikei/iOSTraining/tree/master/swift)
+======
+
+
+
 iOS Development Training Course Repository
 ======
 
