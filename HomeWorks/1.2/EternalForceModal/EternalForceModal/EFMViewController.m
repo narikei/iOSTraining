@@ -26,16 +26,23 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)buttonTapped:(id)sender {
+- (IBAction)buttonTapped:(id)sender
+{
 
     EFMSecondViewController *secondViewController = [[EFMSecondViewController alloc] initWithNibName:@"EFMSecondViewController" bundle:nil];
     // TODO secondViewControllerのdelegateを自分にセット
+    secondViewController.delegate = self;
+    
     // TODO [self presentViewController:￼ animated:￼ completion:￼] を呼ぶ
-
+    [self presentViewController:secondViewController animated:YES completion:nil];
 }
 
 #pragma EMFSecondViewController delegate
 // TODO EFMSecondViewController の delegateメソッドを実装
+- (void)closeView:(UIViewController*)sender
+{
+    [sender dismissViewControllerAnimated:YES completion:nil];
+}
 
 
 
